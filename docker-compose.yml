@@ -19,7 +19,7 @@ services:
     image: k0rventen/apple-health-grafana-ingester:v0.4.0
     #build: ./ingester
     volumes:
-    - <local_path_to_export.zip>:/export.zip
-
+    - /var/lib/docker/volumes/health-data/export.zip:/export.zip
+    
 volumes:
   influx-data:
